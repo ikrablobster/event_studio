@@ -10,7 +10,7 @@
   height: 100%;
 }
 
-.anim-line a{
+.anim-line a {
   position: relative;
 }
 
@@ -30,12 +30,11 @@
   left: 0;
 }
 
-.anim-btn a:hover,
-.anim-btn button:hover{
+.anim-btn a:hover {
   background-color: vars.$color-title;
 }
 
-.anim-svg svg:hover{
+.anim-svg svg:hover {
   scale: 1.2;
   margin-bottom: 15px;
   transition: scale .3s, margin-bottom .3s;
@@ -78,6 +77,10 @@ body {
     background-color: vars.$color-title;
     font-size: 18px;
     transition: background-color .4s;
+  }
+
+  &__order-btn:hover {
+    background-color: vars.$color-text;
   }
 
   &__order-link {}
@@ -183,28 +186,12 @@ body {
   &__menu {
     font-size: 16px;
   }
-
 }
 
 .social {
   display: flex;
   align-items: center;
   gap: 30px;
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  width: 100px;
-
-  a {
-    color: aqua;
-    padding-top: 15px;
-  }
 }
 
 .aboutus {
@@ -249,7 +236,7 @@ body {
     background-color: vars.$color-text;
     border-radius: 30px;
     text-align: center;
-    align-self: stretch;
+    align-self: center;
     transition: background-color .4s;
   }
 }
