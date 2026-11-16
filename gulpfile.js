@@ -63,7 +63,6 @@ function styles(){
 
 function scripts(){
 return src([
-    'node_modules/swiper/swiper-bundle.js',
     'app/js/main.js'
 ])
     .pipe(concat('main.min.js'))
@@ -91,6 +90,7 @@ function watching(){
 function building(){
     return src([
         'app/*.html',
+        'app/favicon.svg',
         'app/js/main.min.js',
         'app/css/style.min.css',
         'app/images/*.*',

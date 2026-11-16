@@ -1,42 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Event Studio</title>
+  <meta name="description" content="Event Studio — організація корпоративних заходів, днів народження та весіль «під ключ».">
+  <meta name="theme-color" content="#1E152A">
+  <meta property="og:title" content="Event Studio — організація корпоративних заходів">
+  <meta property="og:description" content="Event Studio — організація корпоративних заходів, днів народження та весіль «під ключ».">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ikrablobster.github.io/event_studio/app/index.html">
+  <meta property="og:image" content="https://ikrablobster.github.io/event_studio/app/images/header_bg.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="top">
     <div class="container">
       <div class="header__top">
-        <a class="header__logo" href="#">
-          <svg width="100" height="50">
+        <a class="header__logo" href="#top" aria-label="На головну">
+          <svg width="100" height="50" aria-hidden="true" focusable="false">
             <use xlink:href="images/sprite.svg#logo"></use>
           </svg>
         </a>
-        <nav class="menu">
-          <ul class="menu__list anim-line">
-            <li class="menu__items"><a class="menu__link" href="#">
+        <nav class="menu" aria-label="Головне меню">
+          <ul class="menu__list anim-line" id="menu-list">
+            <li class="menu__items"><a class="menu__link" href="#top">
                 Головна
               </a></li>
-            <li class="menu__items"><a class="menu__link" href="#">
+            <li class="menu__items"><a class="menu__link" href="#about">
                 Про нас
               </a></li>
-            <li class="menu__items"><a class="menu__link" href="#">
+            <li class="menu__items"><a class="menu__link" href="#services">
                 Послуги
               </a></li>
-            <li class="menu__items"><a class="menu__link" href="#">
+            <li class="menu__items"><a class="menu__link" href="#contacts">
                 Контакти
               </a></li>
           </ul>
         </nav>
-        <button class="header__order-btn">
-          <a class="header__order-link" href="#">Замовити подію</a>
-        </button>
-        <button class="menu__btn">
+        <a class="header__order-btn" href="#contacts">Замовити подію</a>
+        <button class="menu__btn" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="menu-list">
           <span></span>
         </button>
       </div>
@@ -48,15 +54,14 @@
           МИ ВМІЄМО СТВОРЮВАТИ
           СВЯТКОВУ ТА НЕЗАБУТНЮ АТМОСФЕРУ
         </p>
-        <a class="header__link" href="#">
+        <a class="header__link" href="#contacts">
           Замовити подію
         </a>
       </div>
     </div>
-    </div>
   </header>
 <main class="main">
-  <section class="aboutus anim-btn">
+  <section class="aboutus anim-btn" id="about">
     <div class="container">
       <div class="aboutus__contant">
         <h2 class="aboutus__titel title-main">
@@ -78,7 +83,7 @@
           </li>
           <li class="aboutus__items">
             <p class="aboutus__text">
-              Слово «неможливо» - для нас заклик до дії
+              Слово «неможливо» — для нас заклик до дії
             </p>
           </li>
           <li class="aboutus__items">
@@ -88,7 +93,7 @@
           </li>
           <li class="aboutus__items">
             <p class="aboutus__text">
-              В будь-якій ситуації знайдемо вірне рішення
+              У будь-якій ситуації знайдемо вірне рішення
             </p>
           </li>
           <li class="aboutus__items">
@@ -108,7 +113,7 @@
       </div>
     </div>
   </section>
-  <section class="services">
+  <section class="services" id="services">
     <div class="container">
       <h2 class="services__title title-main">
         Послуги
@@ -117,44 +122,44 @@
         <picture>
           <source srcset="images/services.avif" type="image/avif">
           <source srcset="images/services.webp" type="image/webp">
-          <img src="images/services.jpg" alt="Services img">
+          <img src="images/services.jpg" alt="Гості з келихами святкують під конфетті" width="306" height="194" loading="lazy" decoding="async">
         </picture>
         <picture>
           <source srcset="images/services_2.avif" type="image/avif">
           <source srcset="images/services_2.webp" type="image/webp">
-          <img src="images/services_2.jpg" alt="Services img">
+          <img src="images/services_2.jpg" alt="Конфетті та келихи шампанського на святкуванні" width="1146" height="284" loading="lazy" decoding="async">
         </picture>
         <picture>
           <source srcset="images/services_3.avif" type="image/avif">
           <source srcset="images/services_3.webp" type="image/webp">
-          <img src="images/services_3.jpg" alt="Services img">
+          <img src="images/services_3.jpg" alt="Іменинний торт зі свічками" width="306" height="194" loading="lazy" decoding="async">
         </picture>
         <picture>
           <source srcset="images/services_4.avif" type="image/avif">
           <source srcset="images/services_4.webp" type="image/webp">
-          <img src="images/services_4.jpg" alt="Services img">
+          <img src="images/services_4.jpg" alt="Подруги піднімають келихи на святі просто неба" width="306" height="320" loading="lazy" decoding="async">
         </picture>
         <picture>
           <source srcset="images/services_5.avif" type="image/avif">
           <source srcset="images/services_5.webp" type="image/webp">
-          <img src="images/services_5.jpg" alt="Services img">
+          <img src="images/services_5.jpg" alt="Гості піднімають келихи на урочистому банкеті" width="634" height="214" loading="lazy" decoding="async">
         </picture>
         <picture>
           <source srcset="images/services_6.avif" type="image/avif">
           <source srcset="images/services_6.webp" type="image/webp">
-          <img src="images/services_6.jpg" alt="Services img">
+          <img src="images/services_6.jpg" alt="Святкова сервіровка столу з рожевою серветкою і фіолетовими келихами" width="306" height="320" loading="lazy" decoding="async">
         </picture>
       </div>
     </div>
   </section>
-  <section class="questions">
+  <section class="questions" id="questions">
     <div class="questions__container">
       <h2 class="questions__title title-main">
         Питання
       </h2>
       <div class="questions__contant">
         <h3 class="questions__title3">
-          Скільки часу потрібно для оганізації свята, коли краще звертатись?
+          Скільки часу потрібно для організації свята, коли краще звертатись?
         </h3>
         <p class="questions__text">
           Для організації середніх івентів за складністю, приблизно на 150-300 чол., з нескладними завданнями щодо
@@ -165,22 +170,22 @@
         </h3>
         <p class="questions__text">
           Люди різні, бажання та бюджети свят над якими ми працюємо теж різні. Ми створюємо свої заходи індивідуально
-          “під ключ”, під кожного свого клієнта. Можемо лише спробувати зорієнтувати Вас - організувати программу “під
+          “під ключ”, під кожного свого клієнта. Можемо лише спробувати зорієнтувати Вас — організувати програму “під
           ключ” дитячого дня народження ми беремось з бюджетом від 60 000 грн., дорослого дня народження від 100 000
-          грн. Весілля “ під ключ” від 200 000 грн.
+          грн. Весілля “під ключ” від 200 000 грн.
         </p>
         <h3 class="questions__title3">
-          Скільки коштують наши послуги?
+          Скільки коштують наші послуги?
         </h3>
         <p class="questions__text">
           Заходи які ми створюємо не назвеш простими з організаційної точки зору. Це колосальна робота та величезна
-          відповідальність і саме тому вартість наших послуг залежить від обсягу нашої работи і складає 10% від
+          відповідальність і саме тому вартість наших послуг залежить від обсягу нашої роботи і складає 10% від
           загального бюджету заходу.
         </p>
       </div>
     </div>
   </section>
-  <section class="reviews">
+  <section class="reviews" id="reviews">
     <h2 class="reviews__title title-main">
       Що говорять наші клієнти
     </h2>
@@ -191,33 +196,34 @@
             <picture>
               <source srcset="images/user-avatar.avif" type="image/avif">
               <source srcset="images/user-avatar.webp" type="image/webp">
-              <img src="images/user-avatar.jpg" alt="User avatar">
+              <img src="images/user-avatar.jpg" alt="" width="40" height="40" loading="lazy" decoding="async">
             </picture>
             <div class="reviews__user-box">
               <p class="username">Олег</p>
-              <ul class="reviews__list">
+              <span class="visually-hidden">Оцінка 5 з 5</span>
+              <ul class="reviews__list" aria-hidden="true">
                 <li class="reviews__items">
-                  <svg width="16" height="15">
+                  <svg width="16" height="15" aria-hidden="true" focusable="false">
                     <use xlink:href="images/sprite.svg#star-active"></use>
                   </svg>
                 </li>
                 <li class="reviews__items">
-                  <svg width="16" height="15">
+                  <svg width="16" height="15" aria-hidden="true" focusable="false">
                     <use xlink:href="images/sprite.svg#star-active"></use>
                   </svg>
                 </li>
                 <li class="reviews__items">
-                  <svg width="16" height="15">
+                  <svg width="16" height="15" aria-hidden="true" focusable="false">
                     <use xlink:href="images/sprite.svg#star-active"></use>
                   </svg>
                 </li>
                 <li class="reviews__items">
-                  <svg width="16" height="15">
+                  <svg width="16" height="15" aria-hidden="true" focusable="false">
                     <use xlink:href="images/sprite.svg#star-active"></use>
                   </svg>
                 </li>
                 <li class="reviews__items">
-                  <svg width="16" height="15">
+                  <svg width="16" height="15" aria-hidden="true" focusable="false">
                     <use xlink:href="images/sprite.svg#star-active"></use>
                   </svg>
                 </li>
@@ -227,7 +233,7 @@
           </div>
           <p class="reviews__text">
             "Зверталися до вас для організації корпоративного заходу – і залишилися в повному захваті! Все було
-            продумано до дрібниць!Гості у захваті, атмосфера була приголомшлива. Дякую вам за неймовірне свято! Тепер
+            продумано до дрібниць! Гості у захваті, атмосфера була приголомшлива. Дякую вам за неймовірне свято! Тепер
             тільки до вас!"
           </p>
         </div>
@@ -236,33 +242,34 @@
             <picture>
               <source srcset="images/user-avatar-2.avif" type="image/avif">
               <source srcset="images/user-avatar-2.webp" type="image/webp">
-              <img src="images/user-avatar-2.jpg" alt="User avatar">
+              <img src="images/user-avatar-2.jpg" alt="" width="40" height="40" loading="lazy" decoding="async">
             </picture>
             <div class="reviews__user-box">
               <p class="username">Олег</p>
-              <ul class="reviews__list">
+              <span class="visually-hidden">Оцінка 5 з 5</span>
+              <ul class="reviews__list" aria-hidden="true">
                 <li class="reviews__items">
-                  <svg width="16" height="15">
+                  <svg width="16" height="15" aria-hidden="true" focusable="false">
                     <use xlink:href="images/sprite.svg#star-active"></use>
                   </svg>
                 </li>
                 <li class="reviews__items">
-                  <svg width="16" height="15">
+                  <svg width="16" height="15" aria-hidden="true" focusable="false">
                     <use xlink:href="images/sprite.svg#star-active"></use>
                   </svg>
                 </li>
                 <li class="reviews__items">
-                  <svg width="16" height="15">
+                  <svg width="16" height="15" aria-hidden="true" focusable="false">
                     <use xlink:href="images/sprite.svg#star-active"></use>
                   </svg>
                 </li>
                 <li class="reviews__items">
-                  <svg width="16" height="15">
+                  <svg width="16" height="15" aria-hidden="true" focusable="false">
                     <use xlink:href="images/sprite.svg#star-active"></use>
                   </svg>
                 </li>
                 <li class="reviews__items">
-                  <svg width="16" height="15">
+                  <svg width="16" height="15" aria-hidden="true" focusable="false">
                     <use xlink:href="images/sprite.svg#star-active"></use>
                   </svg>
                 </li>
@@ -280,33 +287,34 @@
             <picture>
               <source srcset="images/user-avatar-3.avif" type="image/avif">
               <source srcset="images/user-avatar-3.webp" type="image/webp">
-              <img src="images/user-avatar-3.jpg" alt="User avatar">
+              <img src="images/user-avatar-3.jpg" alt="" width="40" height="40" loading="lazy" decoding="async">
             </picture>
             <div class="reviews__user-box">
               <p class="username">Олег</p>
-              <ul class="reviews__list">
+              <span class="visually-hidden">Оцінка 5 з 5</span>
+              <ul class="reviews__list" aria-hidden="true">
                 <li class="reviews__items">
-                  <svg width="16" height="15">
+                  <svg width="16" height="15" aria-hidden="true" focusable="false">
                     <use xlink:href="images/sprite.svg#star-active"></use>
                   </svg>
                 </li>
                 <li class="reviews__items">
-                  <svg width="16" height="15">
+                  <svg width="16" height="15" aria-hidden="true" focusable="false">
                     <use xlink:href="images/sprite.svg#star-active"></use>
                   </svg>
                 </li>
                 <li class="reviews__items">
-                  <svg width="16" height="15">
+                  <svg width="16" height="15" aria-hidden="true" focusable="false">
                     <use xlink:href="images/sprite.svg#star-active"></use>
                   </svg>
                 </li>
                 <li class="reviews__items">
-                  <svg width="16" height="15">
+                  <svg width="16" height="15" aria-hidden="true" focusable="false">
                     <use xlink:href="images/sprite.svg#star-active"></use>
                   </svg>
                 </li>
                 <li class="reviews__items">
-                  <svg width="16" height="15">
+                  <svg width="16" height="15" aria-hidden="true" focusable="false">
                     <use xlink:href="images/sprite.svg#star-active"></use>
                   </svg>
                 </li>
@@ -322,53 +330,53 @@
       </div>
     </div>
   </section>
-  <section class="consultation anim-line">
+  <section class="consultation anim-line" id="consultation">
     <div class="container">
-      <a class="consultation__link" href="#">
-        <h3 class="consultation__titel title-main">
+      <a class="consultation__link" href="#contacts">
+        <h2 class="consultation__titel title-main">
           Детальна консультація
-        </h3>
+        </h2>
       </a>
     </div>
   </section>
 </main>
-<footer class="footer">
+<footer class="footer" id="contacts">
   <div class="container">
     <div class="footer__box">
-      <a class="header__logo" href="#">
-        <svg width="100" height="50">
+      <a class="header__logo" href="#top" aria-label="На головну">
+        <svg width="100" height="50" aria-hidden="true" focusable="false">
           <use xlink:href="images/sprite.svg#logo"></use>
         </svg>
       </a>
-      <nav class="footer__menu">
-        <ul class="menu__list anim-line">
-          <li class="menu__items"><a class="menu__link" href="#">
+      <nav class="footer__menu" aria-label="Меню в підвалі">
+        <ul class="footer__list anim-line">
+          <li class="footer__items"><a class="footer__link" href="#top">
               Головна
             </a></li>
-          <li class="menu__items"><a class="menu__link" href="#">
+          <li class="footer__items"><a class="footer__link" href="#about">
               Про нас
             </a></li>
-          <li class="menu__items"><a class="menu__link" href="#">
+          <li class="footer__items"><a class="footer__link" href="#services">
               Послуги
             </a></li>
-          <li class="menu__items"><a class="menu__link" href="#">
+          <li class="footer__items"><a class="footer__link" href="#contacts">
               Контакти
             </a></li>
         </ul>
       </nav>
       <div class="social anim-svg">
-        <a class="social__insta" href="#">
-          <svg width="24" height="24">
+        <a class="social__insta" href="#" aria-label="Instagram">
+          <svg width="24" height="24" aria-hidden="true" focusable="false">
             <use xlink:href="images/sprite.svg#instagram"></use>
           </svg>
         </a>
-        <a class="social__facebook" href="#">
-          <svg width="24" height="24">
+        <a class="social__facebook" href="#" aria-label="Facebook">
+          <svg width="24" height="24" aria-hidden="true" focusable="false">
             <use xlink:href="images/sprite.svg#facebook"></use>
           </svg>
         </a>
-        <a class="social__telegram" href="#">
-          <svg width="20" height="20">
+        <a class="social__telegram" href="#" aria-label="Telegram">
+          <svg width="20" height="20" aria-hidden="true" focusable="false">
             <use xlink:href="images/sprite.svg#telegram"></use>
           </svg>
         </a>

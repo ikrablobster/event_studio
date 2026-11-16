@@ -1,42 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Event Studio</title>
+  <meta name="description" content="Event Studio — організація корпоративних заходів, днів народження та весіль «під ключ».">
+  <meta name="theme-color" content="#1E152A">
+  <meta property="og:title" content="Event Studio — організація корпоративних заходів">
+  <meta property="og:description" content="Event Studio — організація корпоративних заходів, днів народження та весіль «під ключ».">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ikrablobster.github.io/event_studio/app/index.html">
+  <meta property="og:image" content="https://ikrablobster.github.io/event_studio/app/images/header_bg.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="top">
     <div class="container">
       <div class="header__top">
-        <a class="header__logo" href="#">
-          <svg width="100" height="50">
+        <a class="header__logo" href="#top" aria-label="На головну">
+          <svg width="100" height="50" aria-hidden="true" focusable="false">
             <use xlink:href="images/sprite.svg#logo"></use>
           </svg>
         </a>
-        <nav class="menu">
-          <ul class="menu__list anim-line">
-            <li class="menu__items"><a class="menu__link" href="#">
+        <nav class="menu" aria-label="Головне меню">
+          <ul class="menu__list anim-line" id="menu-list">
+            <li class="menu__items"><a class="menu__link" href="#top">
                 Головна
               </a></li>
-            <li class="menu__items"><a class="menu__link" href="#">
+            <li class="menu__items"><a class="menu__link" href="#about">
                 Про нас
               </a></li>
-            <li class="menu__items"><a class="menu__link" href="#">
+            <li class="menu__items"><a class="menu__link" href="#services">
                 Послуги
               </a></li>
-            <li class="menu__items"><a class="menu__link" href="#">
+            <li class="menu__items"><a class="menu__link" href="#contacts">
                 Контакти
               </a></li>
           </ul>
         </nav>
-        <button class="header__order-btn">
-          <a class="header__order-link" href="#">Замовити подію</a>
-        </button>
-        <button class="menu__btn">
+        <a class="header__order-btn" href="#contacts">Замовити подію</a>
+        <button class="menu__btn" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="menu-list">
           <span></span>
         </button>
       </div>
@@ -48,10 +54,9 @@
           МИ ВМІЄМО СТВОРЮВАТИ
           СВЯТКОВУ ТА НЕЗАБУТНЮ АТМОСФЕРУ
         </p>
-        <a class="header__link" href="#">
+        <a class="header__link" href="#contacts">
           Замовити подію
         </a>
       </div>
-    </div>
     </div>
   </header>
